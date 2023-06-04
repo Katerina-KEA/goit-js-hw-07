@@ -1,7 +1,7 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const galleryList = document.querySelector(".gallery");
 const galleryMarkup = galleryItems
@@ -32,7 +32,7 @@ function showOriginalImage(event) {
   }
   document.addEventListener("keydown", closeModalOnEscape);
 
-  const imgOriginal = event.target.dataset.sourse;
+  const imgOriginal = event.target.dataset.source;
   imgModal = basicLightbox.create(`
         <img width="1200" height="800" src="${imgOriginal}">
       `);
